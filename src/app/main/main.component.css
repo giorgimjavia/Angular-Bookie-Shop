@@ -1,0 +1,28 @@
+.main-div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin: 0 100px;
+  }
+  
+  @media (max-width: 900px) {
+    .main-div {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 40px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .main-div {
+      grid-template-columns: 1fr;
+      margin: 0 20px;
+    }
+  }
+  
+  h2 {
+    text-align: center;
+    text-transform: uppercase; 
+    margin: 40px;
+    color: #79e579;
+  }
+  

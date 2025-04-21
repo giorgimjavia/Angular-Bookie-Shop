@@ -1,0 +1,10 @@
+<div class="book-card"> 
+    <img [src]="book.img || 'no-available.jpg'" alt="Book cover" />
+    
+    <div class="book-info">
+      <p><strong>Author:</strong> {{ book.author | titlecase}}</p>
+      <p><strong>Title:</strong> {{ book.title | titlecase }}</p>
+      <p><strong>Price:</strong> {{ book.price | currency }}</p>
+      <app-add-to-cart-btn [bookId]="book.id"/>
+    </div>
+  </div>

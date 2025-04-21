@@ -1,0 +1,60 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: hidden;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 50vh;
+    height: 100%;
+    width: 100%;
+}
+
+
+:host::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/bookshelf.png.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+
+.top-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.bottom-div {
+    font-size: larger;
+    margin: 20px;
+}
+
+.bottom-div p {
+    font-family: 'Merriweather', serif;
+    letter-spacing: 4px;
+    font-style: italic;
+}
+
+.right-div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
