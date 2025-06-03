@@ -1,0 +1,21 @@
+# Count TypeScript, HTML, and CSS files normally
+*.ts linguist-language=TypeScript
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.scss linguist-language=SCSS
+
+# Treat Markdown files as documentation (excluded from stats)
+*.md linguist-documentation
+
+# Ignore JSON config files (common in Angular projects)
+*.json linguist-generated
+
+# Ignore build output folders (like dist)
+dist/** linguist-generated
+out/** linguist-generated
+
+# Ignore dependency folders
+node_modules/** linguist-vendored
+
+# Ignore other docs folder if you have one
+docs/** linguist-documentation
